@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/recovery','Home\RecoveryController@index');
+
+
+Route::post('/recovery/submit','Home\RecoveryController@submit');

@@ -19,6 +19,14 @@ Route::prefix('/')->namespace('Home')->group(function (){
     Route::get('/','IndexController@index');
 });
 
+//定义一个后台路由
+Route::prefix('admin/')->namespace('Admin')->group(function(){
+
+
+    //加载后台首页控制器
+    Route::resource('index','IndexController');
+
+});
 
 
 Route::get('/recovery','Home\RecoveryController@index');

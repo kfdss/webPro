@@ -10,10 +10,10 @@
 	<div class="global_topbar banner-recylce">
 		<div class="nav-column">
 			<div class="nav-left">
-				<a href="index.html" class="logo"><img src="hom/images/logo.png" alt=""></a>
+				<a href="/" class="logo"><img src="hom/images/logo.png" alt=""></a>
 				<div class="globar_topbar_links">
-					<a href="index.html" ><span>旧机回收</span><i class="line">下划线</i></a>
-					<a href="index-1.html" rel="nofollow" target="_self"><span>二手良品</span></a>
+					<a href="/" ><span>旧机回收</span><i class="line">下划线</i></a>
+					<a href="/news" rel="nofollow" target="_self"><span>资讯中心</span></a>
 
 				</div>
 			</div>
@@ -596,161 +596,7 @@
 										<img src="hom/images/a919cac6-3f3f-4433-9c25-4f1d097fdb89.png" class="hover-black">
 									</a>
 								</li>
-								<li title="三星">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="2">
-										<input type="hidden" value="三星">
-										<img src="hom/images/7c77647f-4217-485c-b859-033fee4d3dc7.png" class="hover-black">
-									</a>
-								</li>
-								<li title="小米">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="6">
-										<input type="hidden" value="小米">
-										<img src="hom/images/4f52eb8c-a0f4-4dd5-8501-15a6068bd2be.png" class="hover-black">
-									</a>
-								</li>
-								<li title="华为">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="8">
-										<input type="hidden" value="华为">
-										<img src="hom/images/688d4512-d98a-41b9-9a9b-6e22d9003fe1.png" class="hover-black">
-									</a>
-								</li>
-								<li title="HTC">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="4">
-										<input type="hidden" value="HTC">
-										<img src="hom/images/c88232ed-8943-41c2-a42a-4114325f6af0.png" class="hover-black">
-									</a>
-								</li>
-								<li title="诺基亚">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="3">
-										<input type="hidden" value="诺基亚">
-										<img src="hom/images/14eb640f-2942-49bb-b2e6-476b7b7f0da2.png" class="hover-black">
-									</a>
-								</li>
-								<li title="黑莓">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="5">
-										<input type="hidden" value="黑莓">
-										<img src="hom/images/44e2a942-06f8-4322-ab11-0fe472d2ede9.png" class="hover-black">
-									</a>
-								</li>
-								<li title="索尼">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="9">
-										<input type="hidden" value="索尼">
-										<img src="hom/images/69b426d8-7216-4f24-a4af-fab3533d9407.png" class="hover-black">
-									</a>
-								</li>
-								<li title="联想">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="10">
-										<input type="hidden" value="联想">
-										<img src="hom/images/a3ed9683-9c14-4721-abff-844a2d503af4.png" class="hover-black">
-									</a>
-								</li>
-								<li title="摩托罗拉">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="11">
-										<input type="hidden" value="摩托罗拉">
-										<img src="hom/images/1ea40050-6af4-4492-8a4d-f6cdde134da0.png" class="hover-black">
-									</a>
-								</li>
-								<li title="LG">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="15">
-										<input type="hidden" value="LG">
-										<img src="hom/images/8bcf6bb1-770b-40c4-9ea1-ed4edc62d6f0.png" class="hover-black">
-									</a>
-								</li>
-								<li title="微软">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="29">
-										<input type="hidden" value="微软">
-										<img src="hom/images/1996d2f3-ad9b-46ac-89ca-d872b35e1d58.png" class="hover-black">
-									</a>
-								</li>
-								<li title="华硕">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="30">
-										<input type="hidden" value="华硕">
-										<img src="hom/images/2bb63a00-71f2-41e3-afc6-97018c2a943e.png" class="hover-black">
-									</a>
-								</li>
-								<li>
-									<a href="javascript:;" class="show-more"><span>展开更多</span> <i></i></a>
-								</li>
-								<li title="谷歌">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="31">
-										<input type="hidden" value="谷歌">
-										<img src="hom/images/826e50c3-5859-4ee9-9a30-2b3b0a549e59.png" class="hover-black">
-									</a>
-								</li>
-								<li title="飞利浦">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="39">
-										<input type="hidden" value="飞利浦">
-										<img src="hom/images/06402923-f523-4484-bd33-7c9c8715fe2f.png" class="hover-black">
-									</a>
-								</li>
-								<li title="E人E本">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="41">
-										<input type="hidden" value="E人E本">
-										<img src="hom/images/5660f48d-50ad-4418-8693-0c2972753165.png" class="hover-black">
-									</a>
-								</li>
-								<li title="惠普">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="43">
-										<input type="hidden" value="惠普">
-										<img src="hom/images/b6a67f4d-5ace-4343-ba5c-32d1600bf84b.png" class="hover-black">
-									</a>
-								</li>
-								<li title="VOYO">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="44">
-										<input type="hidden" value="VOYO">
-										<img src="hom/images/a2de032c-101f-4fb0-b43f-9b13ccf824ea.png" class="hover-black">
-									</a>
-								</li>
-								<li title="亚马逊">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="45">
-										<input type="hidden" value="亚马逊">
-										<img src="hom/images/8665267e-1222-4725-b029-9034ebf78758.png" class="hover-black">
-									</a>
-								</li>
-								<li title="戴尔">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="46">
-										<input type="hidden" value="戴尔">
-										<img src="hom/images/8d6a1649-eaa2-4e71-8dfe-bfafc4180dd7.png" class="hover-black">
-									</a>
-								</li>
+								
 							</ul>
 						</div>
 					</div>
@@ -762,111 +608,16 @@
 	                    	相关回收机型
 	                    </h2>
 						<ul id="productUl">
+							
+							
 							<li title="苹果 iPhone 8">
-								<a href="3041.html" >
+								<a href="/recovery" >
 									<div class="pro-img"><img src="hom/images/97bca775-5327-4156-8c92-a79e1b6e643f.png"></div>
 									<h2 class="pro-name">苹果 iPhone 8</h2>
 									<p class="pro-num">目前已回收20台</p>
 								</a>
 							</li>
-							<li title="苹果iPhone 6s">
-								<a href="1591.html" >
-									<div class="pro-img"><img src="hom/images/9475200a-e977-4b66-aa77-1b5538369b52.png"></div>
-									<h2 class="pro-name">苹果iPhone 6s</h2>
-									<p class="pro-num">目前已回收9864台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 6">
-								<a href="1167.html" >
-									<div class="pro-img"><img src="hom/images/140bfd81-c0e4-4268-bfc7-10b092b70d98.png"></div>
-									<h2 class="pro-name">苹果 iPhone 6</h2>
-									<p class="pro-num">目前已回收17035台</p>
-								</a>
-							</li>
-							<li title="苹果iPhone X">
-								<a href="3043.html" >
-									<div class="pro-img"><img src="hom/images/df06d715-83e7-48ae-bd07-5445d75206f6.png"></div>
-									<h2 class="pro-name">苹果iPhone X</h2>
-									<p class="pro-num">目前已回收46台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 7 Plus">
-								<a href="2135.html" >
-									<div class="pro-img"><img src="hom/images/37808028-366c-4566-8afe-67e4e3c4b298.png"></div>
-									<h2 class="pro-name">苹果 iPhone 7 Plus</h2>
-									<p class="pro-num">目前已回收846台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 7">
-								<a href="2134.html" >
-									<div class="pro-img"><img src="hom/images/d673093d-02c9-41bc-b710-b093d9bc4e9d.png"></div>
-									<h2 class="pro-name">苹果 iPhone 7</h2>
-									<p class="pro-num">目前已回收965台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 7 Plus（A1784）">
-								<a href="2983.html" >
-									<div class="pro-img"><img src="hom/images/8f907726-65d7-4a76-8ca7-b53cf4647874.png"></div>
-									<h2 class="pro-name">苹果 iPhone 7 Plus（A1784）</h2>
-									<p class="pro-num">目前已回收0台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 7（A1778）">
-								<a href="2982.html" >
-									<div class="pro-img"><img src="hom/images/0901507b-0869-4667-b56f-5167fa5d6b16.png"></div>
-									<h2 class="pro-name">苹果 iPhone 7（A1778）</h2>
-									<p class="pro-num">目前已回收11台</p>
-								</a>
-							</li>
-							<li title="苹果iPhone 6S Plus">
-								<a href="1590.html" >
-									<div class="pro-img"><img src="hom/images/6e23f524-76b7-4866-88d9-edaf8f4c234e.png"></div>
-									<h2 class="pro-name">苹果iPhone 6S Plus</h2>
-									<p class="pro-num">目前已回收5551台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 6 Plus">
-								<a href="1165.html" >
-									<div class="pro-img"><img src="hom/images/c80f5b21-872b-4c37-8a7a-88af13e250ae.png"></div>
-									<h2 class="pro-name">苹果 iPhone 6 Plus</h2>
-									<p class="pro-num">目前已回收9640台</p>
-								</a>
-							</li>
-							<li title="苹果 iphone 8 plus">
-								<a href="3042.html" >
-									<div class="pro-img"><img src="hom/images/df06d715-83e7-48ae-bd07-5445d75206f6.png"></div>
-									<h2 class="pro-name">苹果 iphone 8 plus</h2>
-									<p class="pro-num">目前已回收43台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 5">
-								<a href="3.html" >
-									<div class="pro-img"><img src="hom/images/7eab09b1-706e-45e4-bbb8-1bd6eed3be93.png"></div>
-									<h2 class="pro-name">苹果 iPhone 5</h2>
-									<p class="pro-num">目前已回收4030台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 5C">
-								<a href="4.html" >
-									<div class="pro-img"><img src="hom/images/add3b05b-1608-40bf-8612-dd35ec4e15ef.png"></div>
-									<h2 class="pro-name">苹果 iPhone 5C</h2>
-									<p class="pro-num">目前已回收597台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 4s">
-								<a href="2.html" >
-									<div class="pro-img"><img src="hom/images/e1538f72-340a-439a-b0bb-d57894ab6194.png"></div>
-									<h2 class="pro-name">苹果 iPhone 4s</h2>
-									<p class="pro-num">目前已回收5401台</p>
-								</a>
-							</li>
-							<li title="苹果 iPhone 4（A1332）">
-								<a href="1.html" >
-									<div class="pro-img"><img src="hom/images/e48e8a3c-8299-4291-ae54-7e29f062eef2.png"></div>
-									<h2 class="pro-name">苹果 iPhone 4（A1332）</h2>
-									<p class="pro-num">目前已回收2836台</p>
-								</a>
-							</li>
+							
 						</ul>
 						<span class="hide" id="isMore">
 	                    	   <a href="javascript:;" class="ck-more" id="moreBtn">查看更多</a>

@@ -33,242 +33,196 @@
 		<link rel="stylesheet" href="{{ asset('hom/css/base-all.css') }}">
 		<link rel="stylesheet" href="{{ asset('hom/css/index.css') }}" >
 		<link rel="stylesheet" href="{{ asset('hom/css/video-js.css') }}">
+		<link rel="stylesheet" href="{{ asset('hom/css/news.css') }}">
 	</head>
 
 	<body>
 		<!-- 顶部 -->
-
-		<div class="header">
+		<div id="app">
 			
-			<!--顶部导航替换内容-->
-			@section('global_topbar')
-				<div class="global_topbar ">
-			        <div class="nav-column">
-			            <div class="nav-left">
-			                <a href="/index.html" class="logo"><img src="/resources/v2/images/logo.png" alt=""></a>
-			                <div class="globar_topbar_links">
-			                    <a href="/index.html"><span>旧机回收</span><i class="line">下划线</i></a>
-			                    <a href="/2shou/index.html" rel="nofollow" target="_self"><span>二手良品</span></a>
-			                    
-			                </div>
-			            </div>
-			            <div class="nav-right">
-			                <ul>
-			                    <li class="cooperation">
-			                        <a href="javascript:;" class="nav-r-link">企业合作/服务</a><i class="tringle"></i><i class="line-bar">线</i>
-			                         <div class="nav-select">
-			                             <i class="select-tringle"></i>
-			                             <a href="/purchaseCustomer.html" target="_blank">批量回收/采购</a>
-			                             <!--<a href="http://open.58yiji.com/login" target="_blank" class="last-child">易机网开放平台</a>-->
-			                         </div>
-			                    </li>
-			                    <li class="search-r">
-			                        <a href="/index.html"><i class="search-navbr">搜索</i></a><i class="line-bar">线</i>
-			                        <!-- 
-			                        <div class="nav-select nav-select-sh">
-			                            <i class="select-tringle"></i>
-			                            <div class="search-inner">
-			                                <input type="text" class="search-text" placeholder="请输入想要购买的二手良品机型">
-			                                <a href="javascript:;" class="search">搜索</a>
-			                            </div>
-			                        </div>
-			                         -->
-			                    </li>
-			                    <li class="phone-s">
-			                        <i class="phone-ewm">手机扫二维码</i><i class="tringle"></i><i class="line-bar">线</i>
-			                        <div class="nav-select">
-			                            <i class="select-tringle"></i>
-			                            <a href="javascript:;" class="last-child erweima"><img src="/resources/v2/images/code_03.jpg" alt="" width="130" height="130"><p>易机网移动端</p></a>
-			                        </div>
-			                    </li>
-			                    <li class="user-login">
-			                        <!--未登录-->
-			                        
-			                        	<a href="/member/toLogin.html" class="nav-r-link login"><span class="state">未登录</span></a>
-			                        
-			                        <!--已登录-->
-			                        
-			                    </li>
-			                </ul>
-			            </div>
-			        </div>
-			        
-			    </div>
-			@show
-		</div>
 		
-		<!--替换主体内容-->
-		@section('main')
-	    
-	    @show
-		
-		<!-- 底部 -->
-		<div class="footer">
-			<div class="container">
-				<ul>
-					<li class="first">
-						<h2 class="name"><i></i>资讯中心</h2>
-						<a href="index.htm" target="_blank"><i></i>回收资讯</a>
-						<a href="index-1.htm" target="_blank"><i></i>手机资讯</a>
-						<a href="index-2.htm" target="_blank"><i></i>易机资讯</a>
-					</li>
-					<li class="second">
-						<h2 class="name"><i></i>回收事项</h2>
-						<a href="term.html" target="_blank"><i></i>交易条款</a>
-						<a href="ckIntroduction.html" target="_blank"><i></i>质检说明</a>
-						<a href="lcjs.html" target="_blank"><i></i>交易流程</a>
-					</li>
-					<li class="third">
-						<h2 class="name"><i></i>关于我们</h2>
-						<a href="about_yjw.html" target="_blank"><i></i>了解我们</a>
-						<a href="1-1.html" target="_blank"><i></i>常见问题</a>
-						<a href="12.html" target="_blank"><i></i>联系我们</a>
-						<a href="13.html" target="_blank"><i></i>加入我们</a>
-					</li>
-					<li class="four">
-						<h2 class="name tel-phone"><i></i>400-848-9711</h2>
-						<p class="time">上午：9:30-12:00 <br>下午：13:30-18:30</p>
-						<p class="address">地址：深圳市南山区南海大道1057<br> 号科技大厦二期B座402室</p>
-					</li>
-					<li class="five">
-						<p class="name-ewm">关注公众号查订单</p>
-						<p class="ewm"><img src="hom/images/erweima.png" alt="" height="90" width="90"></p>
-					</li>
-					<!-- 
-            <li class="five">
-                <p class="name-ewm">关注公众号查订单</p>
-                <p class="ewm"><img src="hom/images//resources/v2/images/erweima.png" alt="" height="90" width="90"></p>
-            </li>
-             -->
-				</ul>
+			<div class="header">
+				
+				<!--顶部导航替换内容-->
+				@section('global_topbar')
+					
+				@show
 			</div>
-			<p class="copyright">© Copyright 2017 All Rights Reserved 深圳威锋互动网络有限公司 版权所有 粤ICP备18022101号-1</p>
-			<div style="width:300px;margin:0 auto; padding:20px 0;">
-				<a target="_blank" href="javascript:if(confirm(%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885%27" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="hom/images/record.png" style="float:left;" />
-					<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44030502001885号</p>
-				</a>
+			
+			<!--替换主体内容-->
+			@section('main')
+		    
+		    @show
+			
+			<!-- 底部 -->
+			<div class="footer">
+				<div class="container">
+					<ul>
+						<li class="first">
+							<h2 class="name"><i></i>资讯中心</h2>
+							<a href="index.htm" target="_blank"><i></i>回收资讯</a>
+							<a href="index-1.htm" target="_blank"><i></i>手机资讯</a>
+							<a href="index-2.htm" target="_blank"><i></i>易机资讯</a>
+						</li>
+						<li class="second">
+							<h2 class="name"><i></i>回收事项</h2>
+							<a href="term.html" target="_blank"><i></i>交易条款</a>
+							<a href="ckIntroduction.html" target="_blank"><i></i>质检说明</a>
+							<a href="lcjs.html" target="_blank"><i></i>交易流程</a>
+						</li>
+						<li class="third">
+							<h2 class="name"><i></i>关于我们</h2>
+							<a href="about_yjw.html" target="_blank"><i></i>了解我们</a>
+							<a href="1-1.html" target="_blank"><i></i>常见问题</a>
+							<a href="12.html" target="_blank"><i></i>联系我们</a>
+							<a href="13.html" target="_blank"><i></i>加入我们</a>
+						</li>
+						<li class="four">
+							<h2 class="name tel-phone"><i></i>400-848-9711</h2>
+							<p class="time">上午：9:30-12:00 <br>下午：13:30-18:30</p>
+							<p class="address">地址：深圳市南山区南海大道1057<br> 号科技大厦二期B座402室</p>
+						</li>
+						<li class="five">
+							<p class="name-ewm">关注公众号查订单</p>
+							<p class="ewm"><img src="hom/images/erweima.png" alt="" height="90" width="90"></p>
+						</li>
+						<!-- 
+	            <li class="five">
+	                <p class="name-ewm">关注公众号查订单</p>
+	                <p class="ewm"><img src="hom/images//resources/v2/images/erweima.png" alt="" height="90" width="90"></p>
+	            </li>
+	             -->
+					</ul>
+				</div>
+				<p class="copyright">© Copyright 2017 All Rights Reserved 深圳威锋互动网络有限公司 版权所有 粤ICP备18022101号-1</p>
+				<div style="width:300px;margin:0 auto; padding:20px 0;">
+					<a target="_blank" href="javascript:if(confirm(%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885%27" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="hom/images/record.png" style="float:left;" />
+						<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44030502001885号</p>
+					</a>
+				</div>
 			</div>
-		</div>
-		<script type="text/javascript" src="{{ asset('hom/js/video.js') }}" ></script>
-		<script type="text/javascript">
-			var myPlayer = videojs('my-video');
-			jQuery(function() {
-				$(".vjs-mouse-display").on("click", function() {
-					var whereYouAt = myPlayer.currentTime();
-					var value = $(this).attr("data-current-time");
-					var valueArray = value.split(":");
-					var minue = valueArray[0];
-					var des = valueArray[1];
-					myPlayer.currentTime(120);
-
+			<script type="text/javascript" src="{{ asset('hom/js/video.js') }}" ></script>
+			<script type="text/javascript">
+				var myPlayer = videojs('my-video');
+				jQuery(function() {
+					$(".vjs-mouse-display").on("click", function() {
+						var whereYouAt = myPlayer.currentTime();
+						var value = $(this).attr("data-current-time");
+						var valueArray = value.split(":");
+						var minue = valueArray[0];
+						var des = valueArray[1];
+						myPlayer.currentTime(120);
+	
+					});
 				});
-			});
-		</script>
-		<!--右侧导航-->
-		<div class="nav-right-bar">
-			<a href="javascript:;" class="info-kf"><img src="hom/images/r-bar1.png" alt=""></a>
-			<a href="javascript:;" class="attention-us"><img src="hom/images/r-bar2.png" alt="">
-				<div class="erweima">
-					<p>扫码关注</p>
-					<img src="hom/images/erweima.png" alt="" width="100" height="100">
-				</div>
-			</a>
-			<a href="javascript:;" class="go-top"><img src="hom/images/r-bar3.png" alt=""></a>
-		</div>
-		<!--资讯客服弹出框-->
-		<div class="info-service hide">
-			<div class="bigbg" style="display: block;">
-				<div class="cart_con">
-					<div class="close"></div>
-					<div class="cart_nav">
-						<a href="javascript:;" class="on">在线客服</a>
-						<a href="javascript:;" class="">交易流程</a>
-						<a href="javascript:;" class="">快递问题</a>
-						<a href="javascript:;" class="" style="margin-right: 0;">退货问题</a>
+			</script>
+			<!--右侧导航-->
+			<div class="nav-right-bar">
+				<a href="javascript:;" class="info-kf"><img src="hom/images/r-bar1.png" alt=""></a>
+				<a href="javascript:;" class="attention-us"><img src="hom/images/r-bar2.png" alt="">
+					<div class="erweima">
+						<p>扫码关注</p>
+						<img src="hom/images/erweima.png" alt="" width="100" height="100">
 					</div>
-					<div class="cart_Box">
-						<div class="cart_box" style="display: block;">
-							<div class="cartdiv">
-								<p><img class="no_lazy" src="hom/images/Qcart.jpg" alt="在线客服"></p>
-								<a target="_blank" href="javascript:if(confirm(%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes%27" >旧机回收</a>
-								<a target="_blank" href="javascript:if(confirm(%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes%27" >二手良品</a>
+				</a>
+				<a href="javascript:;" class="go-top"><img src="hom/images/r-bar3.png" alt=""></a>
+			</div>
+			<!--资讯客服弹出框-->
+			<div class="info-service hide">
+				<div class="bigbg" style="display: block;">
+					<div class="cart_con">
+						<div class="close"></div>
+						<div class="cart_nav">
+							<a href="javascript:;" class="on">在线客服</a>
+							<a href="javascript:;" class="">交易流程</a>
+							<a href="javascript:;" class="">快递问题</a>
+							<a href="javascript:;" class="" style="margin-right: 0;">退货问题</a>
+						</div>
+						<div class="cart_Box">
+							<div class="cart_box" style="display: block;">
+								<div class="cartdiv">
+									<p><img class="no_lazy" src="hom/images/Qcart.jpg" alt="在线客服"></p>
+									<a target="_blank" href="javascript:if(confirm(%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes%27" >旧机回收</a>
+									<a target="_blank" href="javascript:if(confirm(%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes%27" >二手良品</a>
+								</div>
+							</div>
+							<div class="cart_box" style="display: none;">
+								<div class="problem">
+									<ul>
+										<li>
+											<div class="question">提交订单后需要做什么？</div>
+											<div class="answer" style="display: none;">提交订单后，邮寄手机，填写快递单号，点击发货，接着就坐等收钱啦！</div>
+										</li>
+										<li>
+											<div class="question">回收过程安全吗？</div>
+											<div class="answer" style="display: none;">我们使用支付宝、官方网银全程担保交易，确保回收过程安全。</div>
+										</li>
+										<li>
+											<div class="question">手机资料安全吗？</div>
+											<div class="answer" style="display: none;">请在邮寄之前备份好您的手机数据，我们检测确认之后，会使用专业设备彻底清除手机中的信息，确保您的资料安全。</div>
+										</li>
+										<li>
+											<div class="question">质检人员是怎么检测？</div>
+											<div class="answer" style="display: none;">我们需要了解您的机子是否为真机，功能是否正常，有没有拆修进水，屏幕是否有磨损，摄像头是否完好，无需拆机，使用专业设备检测。</div>
+										</li>
+										<li>
+											<div class="question">多久能收到款？</div>
+											<div class="answer" style="display: none;">到货24小时内确认付款，最快只需2小时（特殊节假日除外），当日到货数量多时会酌情处理。</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cart_box" style="display: none;">
+								<div class="problem">
+									<ul>
+										<li>
+											<div class="question">快递上门取件？</div>
+											<div class="answer" style="display: none;">您可以自己联系快递公司邮寄手机，也可以由我们客服帮您预约快递公司上门取件。</div>
+										</li>
+										<li>
+											<div class="question">邮寄费用怎么算？</div>
+											<div class="answer" style="display: none;">
+												易机网旧机回收采取快递包邮，您可放心选择邮费到付（易机网承担回收旧机的邮寄费用，除邮寄费用以外的额外费用如保价费用等不包含在内）。 若因个人原因要求退货，退货产生的邮寄费用请您自理。
+											</div>
+										</li>
+										<li>
+											<div class="question">邮寄需要注意什么？</div>
+											<div class="answer" style="display: block;">
+												1. 全触摸屏的手机，千万不要把保护膜撕掉了，避免快递途中屏幕的磨损。 2. 寄送快递时请妥善打包您的包裹，可以适当在箱子缝隙加入填充物，以免运输途中损坏设备。 3. 请在邮寄前，将机子密码进行解除，以便我们检测人员及时检测处理您的订单。
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cart_box" style="display: none;">
+								<div class="problem">
+									<ul>
+										<li>
+											<div class="question">哪些手机会被拒收？</div>
+											<div class="answer" style="display: none;">如果收到的手机为高仿、山寨及盗抢机，我们将做退回处理，不予运费补贴。</div>
+										</li>
+										<li>
+											<div class="question">可以选择退货吗？</div>
+											<div class="answer" style="display: none;">若实际检测和订单描述有差异，客服人员将及时与您说明情况，与您协商新的回收价，如果对价格还是不满意，可以选择退货。</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="cart_box" style="display: none;">
-							<div class="problem">
-								<ul>
-									<li>
-										<div class="question">提交订单后需要做什么？</div>
-										<div class="answer" style="display: none;">提交订单后，邮寄手机，填写快递单号，点击发货，接着就坐等收钱啦！</div>
-									</li>
-									<li>
-										<div class="question">回收过程安全吗？</div>
-										<div class="answer" style="display: none;">我们使用支付宝、官方网银全程担保交易，确保回收过程安全。</div>
-									</li>
-									<li>
-										<div class="question">手机资料安全吗？</div>
-										<div class="answer" style="display: none;">请在邮寄之前备份好您的手机数据，我们检测确认之后，会使用专业设备彻底清除手机中的信息，确保您的资料安全。</div>
-									</li>
-									<li>
-										<div class="question">质检人员是怎么检测？</div>
-										<div class="answer" style="display: none;">我们需要了解您的机子是否为真机，功能是否正常，有没有拆修进水，屏幕是否有磨损，摄像头是否完好，无需拆机，使用专业设备检测。</div>
-									</li>
-									<li>
-										<div class="question">多久能收到款？</div>
-										<div class="answer" style="display: none;">到货24小时内确认付款，最快只需2小时（特殊节假日除外），当日到货数量多时会酌情处理。</div>
-									</li>
-								</ul>
-							</div>
+						<div class="cart_bottom">
+							<dl>
+								<dt><img class="no_lazy" src="hom/images/mezi.png" alt="联系客服"></dt>
+								<dd>
+									<h2 style="line-height: 25px;font-size: 18px;color: #333333;text-align: center">400-848-9711</h2>
+									<p style="line-height: 20px;font-size: 12px;color: #333333;text-align: center">咨询时间9:00-19:00</p>
+								</dd>
+							</dl>
 						</div>
-						<div class="cart_box" style="display: none;">
-							<div class="problem">
-								<ul>
-									<li>
-										<div class="question">快递上门取件？</div>
-										<div class="answer" style="display: none;">您可以自己联系快递公司邮寄手机，也可以由我们客服帮您预约快递公司上门取件。</div>
-									</li>
-									<li>
-										<div class="question">邮寄费用怎么算？</div>
-										<div class="answer" style="display: none;">
-											易机网旧机回收采取快递包邮，您可放心选择邮费到付（易机网承担回收旧机的邮寄费用，除邮寄费用以外的额外费用如保价费用等不包含在内）。 若因个人原因要求退货，退货产生的邮寄费用请您自理。
-										</div>
-									</li>
-									<li>
-										<div class="question">邮寄需要注意什么？</div>
-										<div class="answer" style="display: block;">
-											1. 全触摸屏的手机，千万不要把保护膜撕掉了，避免快递途中屏幕的磨损。 2. 寄送快递时请妥善打包您的包裹，可以适当在箱子缝隙加入填充物，以免运输途中损坏设备。 3. 请在邮寄前，将机子密码进行解除，以便我们检测人员及时检测处理您的订单。
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="cart_box" style="display: none;">
-							<div class="problem">
-								<ul>
-									<li>
-										<div class="question">哪些手机会被拒收？</div>
-										<div class="answer" style="display: none;">如果收到的手机为高仿、山寨及盗抢机，我们将做退回处理，不予运费补贴。</div>
-									</li>
-									<li>
-										<div class="question">可以选择退货吗？</div>
-										<div class="answer" style="display: none;">若实际检测和订单描述有差异，客服人员将及时与您说明情况，与您协商新的回收价，如果对价格还是不满意，可以选择退货。</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="cart_bottom">
-						<dl>
-							<dt><img class="no_lazy" src="hom/images/mezi.png" alt="联系客服"></dt>
-							<dd>
-								<h2 style="line-height: 25px;font-size: 18px;color: #333333;text-align: center">400-848-9711</h2>
-								<p style="line-height: 20px;font-size: 12px;color: #333333;text-align: center">咨询时间9:00-19:00</p>
-							</dd>
-						</dl>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 		<script>
 			//联系客服
 			$('.cart_nav a').mouseenter(function() {

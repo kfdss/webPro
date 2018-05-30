@@ -17,12 +17,19 @@
 Route::prefix('/')->namespace('Home')->group(function (){
 
     Route::get('/','IndexController@index');
+	
+	Route::get('/recovery','RecoveryController@index');
+
+	Route::post('/recovery/submit','RecoveryController@submit');
+	
+	Route::get('/news','NewsController@index');
+	
+	Route::get('/news/details','NewsController@details');
+	
+	
+	
 });
 
 
 
-Route::get('/recovery','Home\RecoveryController@index');
-
-
-Route::post('/recovery/submit','Home\RecoveryController@submit');
 

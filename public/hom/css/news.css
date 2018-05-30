@@ -31,41 +31,41 @@ a:hover { text-decoration: none; color: #09f; }
 
 .centerleft h3 a:hover img { display: block; }
 
-.q_01 { background: url(q_01.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_01.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_01 { background: url(../images/q_01.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_01.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_01.on, .q_01:hover { background: url(q_11.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_11.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_01.on, .q_01:hover { background: url(../images/q_11.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_11.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_02 { background: url(q_02.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_02.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_02 { background: url(../images/q_02.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_02.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_02.on, .q_02:hover { background: url(q_22.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_22.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_02.on, .q_02:hover { background: url(../images/q_22.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_22.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_03 { background: url(q_03.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_03.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_03 { background: url(../images/q_03.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_03.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_03.on, .q_03:hover { background: url(q_33.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_33.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_03.on, .q_03:hover { background: url(../images/q_33.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_33.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_04 { background: url(q_04.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_04.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_04 { background: url(../images/q_04.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_04.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_04.on, .q_04:hover { background: url(q_44.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_44.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_04.on, .q_04:hover { background: url(../images/q_44.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_44.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_05 { background: url(q_05.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_05.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_05 { background: url(../images/q_05.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_05.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_05.on, .q_05:hover { background: url(q_55.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_55.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_05.on, .q_05:hover { background: url(../images/q_55.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_55.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_06 { background: url(q_06.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_06.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_06 { background: url(../images/q_06.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_06.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_06.on, .q_06:hover { background: url(q_66.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_66.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_06.on, .q_06:hover { background: url(../images/q_66.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_66.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_07 { background: url(q_07.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_07.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_07 { background: url(../images/q_07.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_07.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_07.on, .q_07:hover { background: url(q_77.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_77.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_07.on, .q_07:hover { background: url(../images/q_77.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_77.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_08 { background: url(q_08.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_08.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_08 { background: url(../images/q_08.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_08.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_08.on, .q_08:hover { background: url(q_88.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_88.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_08.on, .q_08:hover { background: url(../images/q_88.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_88.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
-.q_09 { background: url(q_09.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_09.png*/ no-repeat 20px center; padding-left: 64px; }
+.q_09 { background: url(../images/q_09.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_09.png*/ no-repeat 20px center; padding-left: 64px; }
 
-.q_09.on, .q_09:hover { background: url(q_099.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_099.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
+.q_09.on, .q_09:hover { background: url(../images/q_099.png)/*tpa=http://www.58yiji.com/resources/v2/images/q_099.png*/ no-repeat 20px center #007AFF; color: #fff; padding-left: 64px; }
 
 .gif { background: url(loading_spinner.gif)/*tpa=http://www.58yiji.com/resources/v2/images/loading_spinner.gif*/ no-repeat center center; height: 50px; }
 

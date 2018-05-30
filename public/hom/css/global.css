@@ -1,0 +1,83 @@
+body,ul,dl,dd,h1,h2,h3,h4,h5,h6,p,form,ol{margin:0}
+ul,ol{padding:0}
+table,td,th{border-collapse:collapse}
+ol,ul,li{list-style:none}
+li{float:left}
+h1,h2,h3,h4,em{font-style:normal;font-size:100%;font-weight:400}
+img,input,textarea{border:0;vertical-align:middle}
+a{outline:none;text-decoration:none}
+header,footer,article,main,section{display:block}
+body{font-family:"Microsoft Yahei","����","Arial";min-width:1000px}
+img{width:100%; height:100%;}
+.fl{float:left}
+.fr{float:right}
+.section{overflow:hidden;visibility:visible;width:100%}
+.container{height:100%; position:relative;min-width:1100px;}
+.os-tab{bottom:0;position:absolute;top:0;width:100%}
+.os-tab img{width:100%;}
+.tab{background:#000;display:none;height:100%;width:100%}
+.tab .bg{bottom:0; margin:auto; height:100%; width:100%; position:absolute; top:0; left:0; right:0; width:100%}
+.tab-an .bg{bottom:0;min-height:0}
+.tab.on{display:block}
+
+#fp-nav{margin-top:-32px;opacity:1;position:fixed;top:50%;-webkit-transform:translate3d(0,0,0);z-index:100}
+#fp-nav.right{right:17px}
+#fp-nav.left{left:17px}
+#fp-nav ul,.fp-slidesNav ul{margin:0;padding:0}
+#fp-nav ul li,.fp-slidesNav ul li{display:block;float:none;height:13px;margin:7px;position:relative;width:14px}
+#fp-nav ul li a,.fp-slidesNav ul li a{cursor:pointer;display:block;height:100%;position:relative;text-decoration:none;width:100%;z-index:1}
+#fp-nav ul li a.active span,.fp-slidesNav ul li a.active span,#fp-nav ul li:hover a.active span,.fp-slidesNav ul li:hover a.active span{border-radius:100%;height:12px;margin:-6px 0 0 -6px;width:12px}
+#fp-nav ul li a span,.fp-slidesNav ul li a span{background:#fff;border-radius:50%;border:0;height:4px;left:50%;margin:-2px 0 0 -2px;position:absolute;top:50%;-webkit-transition:all .1s ease-in-out;-moz-transition:all .1s ease-in-out;-o-transition:all .1s ease-in-out;transition:all .1s ease-in-out;width:4px;z-index:1}
+#fp-nav ul li:hover a span,.fp-slidesNav ul li:hover a span{height:10px;margin:-5px 0 0 -5px;width:10px}
+#fp-nav ul li .fp-tooltip{color:#fff;display:block;font-size:14px;font-family:arial,helvetica,sans-serif;max-width:220px;opacity:0;overflow:hidden;position:absolute;top:-2px;white-space:nowrap;width:0}
+#fp-nav ul li:hover .fp-tooltip,#fp-nav.fp-show-active a.active + .fp-tooltip{opacity:1;-webkit-transition:opacity .2s ease-in;transition:opacity .2s ease-in;width:auto}
+#fp-nav ul li .fp-tooltip.right{right:20px}
+#fp-nav ul li .fp-tooltip.left{left:20px}
+.section-5 .chaxun {
+  position: absolute;
+  right: 23%;
+  top: 55.5%;
+  display: inline-block;
+  width: 168px;
+  height: 68px;
+  cursor:pointer;
+}
+.section-7 .mashang{
+	  position: absolute;
+	  right: 38%;
+	  bottom:10%;
+	  display: inline-block;
+	  width: 24%;
+	  height: 82px;
+	  cursor:pointer;
+}
+.inner{width:1200px; margin:0 auto; position:absolute; top:10%; left:50%; height: 90%; margin-left:-600px;}
+
+/*-上门服务介绍页面---*/
+.timer_ll{width:580px; height:32px; background:#ff9c00; color:#fff; font-size:22px; position:absolute;   left: 50%;margin-left: -290px; bottom: 25%; line-height:32px; text-indent:20px;}
+.huodong_ll{width:1200px; height:110px; position:absolute; left:50%; top:10px; margin-left:-600px; line-height:110px; border-bottom-width:2px;border-bottom-style: solid; border-color:rgb(252,154,154);}
+.huodong_ll p{color:#fff; font-size:35px;}
+.ten_ll{color:#f30000;}
+.more_ll{display:block; float:right; color:#ffc015;}
+
+.section2_img{position:absolute;top:150px;width:1200px;left:50%;margin-left:-600px;}
+.multipleColumn{ overflow:hidden; position:relative; width:100%; height:925px; }
+.multipleColumn .hd{ overflow:hidden; height:30px; background:#f4f4f4;   }
+.multipleColumn .hd .next{ background:url("icoRight.gif")/*tpa=http://www.58yiji.com/resources/css/images/icoRight.gif*/ no-repeat;  }
+.multipleColumn .hd ul{ float:left; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+.multipleColumn .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("icoCircle.gif")/*tpa=http://www.58yiji.com/resources/css/images/icoCircle.gif*/ 0 -9px no-repeat; }
+.multipleColumn .hd ul li.on{ background-position:0 0; }
+.multipleColumn .bd{overflow:hidden; margin-left:90px;}
+.multipleColumn .bd ul{ overflow:hidden; zoom:1; width:166px;  float:left; _display:inline; margin-left:90px; }
+.multipleColumn .bd ul li{ margin:15px 0px; float:left; _display:inline; overflow:hidden; width:166px; height:233px;  }
+.multipleColumn .bd ul li .pic{width:166px; height:140px; padding-top:30px; background:rgba(252,147,147,0.4);  }
+.multipleColumn .bd ul li .pic img{ width:80px; height:104px; display:block;margin:0 auto;}
+.multipleColumn .bd ul li .title{ line-height:24px; width:166px; height:63px; background:rgba(245,172,172,0.4); text-indent:20px; }
+.price_red{color:#f70f0f;}
+.sec-next,.sec-prev{position:absolute;top:220px;width:45px;height:80px;z-index:5;}
+.sec-next{right:0; background:url("next_.png")/*tpa=http://www.58yiji.com/resources/images/next_.png*/}
+.sec-prev{left:0; background:url("prev_.png")/*tpa=http://www.58yiji.com/resources/images/prev_.png*/}
+.footer_btn{cursor:pointer;width:484px; height:88px; text-align:center; background:rgba(255,192,21,0.9); position:absolute; left:50%; top:780px; margin-left:-242px;
+border:none; color:#f14d4d; font-size:24px; border-radius:10px;}
+
+#fullPage-nav li .active span{background:pink;}

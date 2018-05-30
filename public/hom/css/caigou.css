@@ -1,0 +1,35 @@
+.custom img { width: 100%; float: left; }
+
+.custom1 { overflow: hidden; position: relative; background-size: 100% 100%; max-height: 887px; }
+
+.custom3 { overflow: hidden; position: relative; background-size: 100% 100%; max-height: 887px; }
+
+.custom1 a { background: url(Btn3.png)/*tpa=http://www.58yiji.com/resources/v2/images/Btn3.png*/ no-repeat; width: 126px; height: 48px; display: inline-block; position: absolute; left: 23%; top: 43%; }
+
+.custom2 { background: url(custom3.jpg)/*tpa=http://www.58yiji.com/resources/v2/images/custom3.jpg*/ no-repeat; background-size: 100% 100%; overflow: hidden; width: 100%; max-height: 879px; }
+
+.custoncon { width: 670px; padding: 60px 0; margin: 0 auto; overflow: hidden; height: 759px; }
+
+.custoncon h3 { font-size: 54px; text-align: center; color: #fff; font-weight: normal; line-height: 70px; }
+
+.custoncon h4, .custoncon p { font-size: 24px; color: #fff; font-weight: normal; line-height: 50px; }
+
+.customnav { line-height: 40px; color: #fff; margin-bottom: 20px; }
+
+.customnav input { float: left; margin-top: 13px; margin-right: 10px; }
+
+.customnav span { display: inline-block; margin-right: 20px; font-size: 24px; }
+
+.Btn1 { border: none; background: url(Btn1.png)/*tpa=http://www.58yiji.com/resources/v2/images/Btn1.png*/ no-repeat; width: 660px; height: 70px; margin-bottom: 20px; line-height: 70px; padding-left: 20px; font-size: 24px; color: #86818c; }
+
+.custoncon textarea { background: url(Btn2.png)/*tpa=http://www.58yiji.com/resources/v2/images/Btn2.png*/ no-repeat; width: 660px; font-size: 24px; border: none; height: 135px; margin-bottom: 20px; color: #86818c; line-height: 50px; padding-left: 20px; }
+
+.submit { border: none; display: inline-block; background: url(Btn4.png)/*tpa=http://www.58yiji.com/resources/v2/images/Btn4.png*/ no-repeat; width: 126px; height: 48px; display: inline-block; color: #53be94; font-size: 20px; line-height: 48px; text-align: center; margin: 0 auto; cursor: pointer; }
+
+.custoncon dd { text-align: center; }
+
+.custoncon dl { position: relative; }
+
+.custoncon dt { position: absolute; font-size: 24px; color: #86818c; left: 15px; top: 0; line-height: 70px; }
+
+/*# sourceMappingURL=caigou.css.map */

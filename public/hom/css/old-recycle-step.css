@@ -21,7 +21,7 @@
 .old-re-step .left-inner .basic-info .version .tringle { display: none; }
 .old-re-step .left-inner .basic-info .version .sel-value { font-size: 18px; color: #007AFF; position: absolute; top: 14px; left: 220px; width: 500px; }
 .old-re-step .left-inner .basic-info .version.active { background-color: #f4f6f9; border: none; }
-.old-re-step .left-inner .basic-info .version.active .tringle { display: block; width: 28px; height: 15px; background: url("../images/tringle.png")/*tpa=http://www.58yiji.com/resources/v2/images/recycle/tringle.png*/ no-repeat; position: relative; bottom: 0px; left: 82px; font-size: 0; text-indent: -999; }
+.old-re-step .left-inner .basic-info .version.active .tringle { display: block; width: 28px; height: 15px; background: url("tringle.png")/*tpa=http://www.58yiji.com/resources/v2/images/recycle/tringle.png*/ no-repeat; position: relative; bottom: 0px; left: 82px; font-size: 0; text-indent: -999; }
 .old-re-step .left-inner .basic-info-choose { width: 778px; border: 1px solid #EEEEF0; padding: 20px 0 0px 20px; background-color: #f4f6f9; margin-bottom: 20px; }
 .old-re-step .left-inner .basic-info-choose .intro { display: inline-block; vertical-align: middle; word-wrap: break-word; word-break: break-all; width: 174px; height: 50px; background-color: #fff; border: 1px solid #EEEEF0; margin-right: 18px; text-align: center; margin-bottom: 20px; cursor: pointer; position: relative; }
 .old-re-step .left-inner .basic-info-choose .intro p { line-height: 50px; word-wrap: break-word; word-break: break-all; }

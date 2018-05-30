@@ -11,12 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+//前台路由组
+Route::prefix('/')->namespace('Home')->group(function (){
+
+    Route::get('/','IndexController@index');
 });
+
 
 
 Route::get('/recovery','Home\RecoveryController@index');
 
 
 Route::post('/recovery/submit','Home\RecoveryController@submit');
+

@@ -51,7 +51,7 @@
 					<li class="user-login">
 						<!--未登录-->
 
-						<a href="javascript:if(confirm(%27http://www.58yiji.com/member/toLogin.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Pro\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://www.58yiji.com/member/toLogin.html%27" class="nav-r-link login"><span class="state">未登录</span></a>
+						<a href="##" class="nav-r-link login"><span class="state">未登录</span></a>
 
 						<!--已登录-->
 
@@ -256,7 +256,7 @@
 								@foreach($brand as $bo)
 								{{--<li class="active" title="{{$bo['brandName']}}">--}}
 								<li title="{{$bo['brandName']}}">
-									<a href="javascript:;">
+									<a href="##" id="{{$bo['id']}}" class="switch_mine">
 										<i class="line"></i>
 										<input type="hidden" value="{{$bo['id']}}">
 										<input type="hidden" value="{{$bo['brandName']}}">
@@ -290,14 +290,15 @@
 	                    </h2>
 						<ul id="productUl">
 							
-							
-							<li title="苹果 iPhone 8">
-								<a href="/recovery" >
-									<div class="pro-img"><img src="hom/images/97bca775-5327-4156-8c92-a79e1b6e643f.png"></div>
-									<h2 class="pro-name">苹果 iPhone 8</h2>
-									<p class="pro-num">目前已回收20台</p>
+							@foreach($macytpe as $mo)
+							<li title="{{$mo['macType']}}">
+								<a href="##">
+									<div class="pro-img"><img src="/Uploads/{{$mo['macPhoto']}}"></div>
+									<h2 class="pro-name">{{$mo['macType']}}</h2>
+									<p class="pro-num">目前已收{{$mo['recoveryNum']}}台</p>
 								</a>
 							</li>
+							@endforeach
 							
 						</ul>
 						<span class="hide" id="isMore">

@@ -77,30 +77,30 @@
 			<div class="centerleft">
 				<h3><span>新闻动态</span></h3>
 				<h3>
-                <a href="index.htm" target="_self" class="q_01 on">回收资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-        	</h3>
+					<a href="/news" target="_self" class="q_01 on">回收资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+				</h3>
 				<h3>
-                <a href="index-1.htm" target="_self" class="q_08">手机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-        	</h3>
+					<a href="index-1.htm" target="_self" class="q_08">手机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+				</h3>
 				<h3>
-                <a href="index-2.htm" target="_self" class="q_07">易机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-        	</h3>
+					<a href="index-2.htm" target="_self" class="q_07">易机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+				</h3>
 				<h3><span>帮助中心</span></h3>
 				<h3>
-		        <a href="1-1.html" rel="nofollow" target="_self" class="q_03 ">
-		        	常见问题
-		        	<img src="{{ asset('hom/images/z_02.png') }}" />
-		        </a>
-    		</h3>
+					<a href="1-1.html" rel="nofollow" target="_self" class="q_03 ">
+						常见问题
+						<img src="{{ asset('hom/images/z_02.png') }}" />
+					</a>
+				</h3>
 				<h3>
-		        <a href="2-1.html" rel="nofollow" target="_self" class="q_05 ">
-		        	服务条款
-		        	<img src="{{ asset('hom/images/z_02.png') }}" />
-		        </a>
-	        </h3>
+					<a href="2-1.html" rel="nofollow" target="_self" class="q_05 ">
+						服务条款
+						<img src="{{ asset('hom/images/z_02.png') }}" />
+					</a>
+				</h3>
 				<h3>
-	        	<a href="3-1.html" target="_self" class="q_01 ">易机课堂<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
+					<a href="3-1.html" target="_self" class="q_01 ">易机课堂<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+				</h3>
 				<!--<h3>
 		        <a href="/helpCenter/4.html" rel="nofollow" target="_self" class="q_06 ">
 		        	担保交易
@@ -108,24 +108,26 @@
 		        </a>
 	        </h3>-->
 				<h3><span>关于我们</span></h3>
+					<h3>
+					<a href="about_yjw.html" rel="nofollow" class="q_02 " target="_self">关于易机网<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+				</h3>
 				<h3>
-		        <a href="about_yjw.html" rel="nofollow" class="q_02 " target="_self">关于易机网<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
-				<h3>
-	        	<a href="12.html" rel="nofollow" class="q_04 " target="_self">联系我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
-				<h3>
-	        	<a href="13.html" rel="nofollow" class="q_07 " target="_self">加入我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
+					<a href="12.html" rel="nofollow" class="q_04 " target="_self">联系我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+				</h3>
+					<h3>
+					<a href="13.html" rel="nofollow" class="q_07 " target="_self">加入我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+				</h3>
 			</div>
 			<div class="centeright pt20">
 				<div class="news">
 					<div>
 						<ul>
+							@foreach($detail as $do)
 							<li>
-								<a class="tonewsdetail" href="3641.html" target="_self" data-default="/news36/3641.html" data-currNo="0" data-offset="0"><strong>贵屿看不见的电子硝烟</strong><span>2016-07-11</span></a>
+								<a class="tonewsdetail" href="/news/details/{{$do['id']}}" target="_self" data-default="/news36/3641.html" data-currNo="{{$do['id']}}" data-offset="0"><strong>{{$do['title']}}</strong><span>{{$do['created_at']}}</span></a>
 							</li>
-							<li>
+							@endforeach
+							{{--<li>
 								<a class="tonewsdetail" href="3639.html" target="_self" data-default="/news36/3639.html" data-currNo="1" data-offset="0"><strong>换手机号不如换手机</strong><span>2016-07-06</span></a>
 							</li>
 							<li>
@@ -166,7 +168,7 @@
 							</li>
 							<li>
 								<a class="tonewsdetail" href="3592.html" target="_self" data-default="/news36/3592.html" data-currNo="14" data-offset="0"><strong>回收手机芯片需要注意什么？</strong><span>2016-05-24</span></a>
-							</li>
+							</li>--}}
 						</ul>
 					</div>
 					<div class="page page-public page-view clearfix" id="pagerDiv">

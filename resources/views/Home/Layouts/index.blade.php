@@ -96,7 +96,7 @@
 				</div>
 				<p class="copyright">© Copyright 2017 All Rights Reserved 深圳威锋互动网络有限公司 版权所有 粤ICP备18022101号-1</p>
 				<div style="width:300px;margin:0 auto; padding:20px 0;">
-					<a target="_blank" href="javascript:if(confirm(%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885%27" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="hom/images/record.png" style="float:left;" />
+					<a target="_blank" href="##" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="hom/images/record.png" style="float:left;" />
 						<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44030502001885号</p>
 					</a>
 				</div>
@@ -142,8 +142,8 @@
 							<div class="cart_box" style="display: block;">
 								<div class="cartdiv">
 									<p><img class="no_lazy" src="hom/images/Qcart.jpg" alt="在线客服"></p>
-									<a target="_blank" href="javascript:if(confirm(%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes%27" >旧机回收</a>
-									<a target="_blank" href="javascript:if(confirm(%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://wpa.qq.com/msgrd?v=3&uin=3266325200&site=qq&menu=yes%27" >二手良品</a>
+									<a target="_blank" href="##" >旧机回收</a>
+									<a target="_blank" href="##" >二手良品</a>
 								</div>
 							</div>
 							<div class="cart_box" style="display: none;">

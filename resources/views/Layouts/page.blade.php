@@ -39,7 +39,7 @@
 			<div class="global_topbar ">
 				<div class="nav-column">
 					<div class="nav-left">
-						<a href="index.html" class="logo">
+						<a href="/" class="logo">
 							<img src="{{ asset('hom/images/logo.png') }}" alt="">
 						</a>
 						<div class="globar_topbar_links">
@@ -94,7 +94,7 @@
 							<li class="user-login">
 								<!--未登录-->
 
-								<a href="javascript:if(confirm(%27http://www.58yiji.com/member/toLogin.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Pro\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://www.58yiji.com/member/toLogin.html%27" class="nav-r-link login">
+								<a href="##" class="nav-r-link login">
 									<span class="state">未登录</span>
 								</a>
 
@@ -188,7 +188,7 @@
 				© Copyright 2017 All Rights Reserved 深圳威锋互动网络有限公司 版权所有 粤ICP备18022101号-1
 			</p>
 			<div style="width:300px;margin:0 auto; padding:20px 0;">
-				<a target="_blank" href="javascript:if(confirm(%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001885%27" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+				<a target="_blank" href="##" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
 					<img src="record.png" style="float:left;"/>
 					<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
 						粤公网安备 44030502001885号

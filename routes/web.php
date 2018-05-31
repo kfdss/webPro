@@ -17,15 +17,19 @@
 Route::prefix('/')->namespace('Home')->group(function (){
 
     Route::get('/','IndexController@index');
+    //机型切换
+    Route::post('/{id}','IndexController@switch');
+
 	
 	Route::get('/recovery','RecoveryController@index');
 
 	Route::post('/recovery/submit','RecoveryController@submit');
-	
+	//新闻资讯列表页
 	Route::get('/news','NewsController@index');
-	
-	Route::get('/news/details','NewsController@details');
-	
+	//新闻资讯详情页
+	Route::get('/news/details/{id}','NewsController@details');
+
+
 	
 	
 });

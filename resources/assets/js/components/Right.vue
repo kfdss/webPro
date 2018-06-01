@@ -65,7 +65,11 @@
                 this.mactype=res.data[1];
             })
 
-        },
+            },
+            updated(){
+                //console.log(11);
+
+            },
 
         methods:{
             br:function(item){
@@ -73,7 +77,18 @@
                 axios.get("/switch/"+id).then(res=>{
                     this.brandi=res.data[0];
                     this.mactype=res.data[1];
-                    //console.log(res.data);
+                    $("#macList li").remove();
+                    var html="";
+                    for(var i=0;i<this.mactype.length;i++){
+                        html+=`<li title="${this.mactype[i].macType}" id="${this.mactype[i].brand_id}">
+                        <a href="/recovery/${this.mactype[i].id}">
+                            <div class="pro-img"><img src="/Uploads/${this.mactype[i].macPhoto}"></div>
+                            <h2 class="pro-name">${this.mactype[i].macType}</h2>
+                            <p class="pro-num">目前已收${this.mactype[i].recoveryNum}台</p>
+                        </a>
+                    </li>`;
+                    };
+                    $(html).appendTo($('#macList'));
                 })
                 $('#isMore').show();
             },
@@ -96,11 +111,14 @@
                 $('#isMore').hide();
             },
             ac:function(item){
-                console.log(item.brandName,item.id);
+                //console.log(item.brandName,item.id);
             },
 
         }
+
     }
+
+
 </script>
 
 <style scoped>

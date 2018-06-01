@@ -2,8 +2,8 @@
     <div>
         <form id="sercheForm">
             <div class="search-all">
-                <input type="text" name="keyWord" id="keyWord" autocomplete="off" placeholder="请输入想要回收手机/平板机型" value="">
-                <a href="##" class="search" @click="search()"><i class="search-icon" id="searchBnt">搜索</i></a>
+                <input type="text" name="keyWord" id="keyWord" autocomplete="off" placeholder="请输入想要回收手机/平板机型">
+                <a href="##" class="search" @click="search()" id="search"><i class="search-icon" id="searchBnt">搜索</i></a>
             </div>
             <div class="search-recycle-end hide" id="searchSelect1">
                 <ul id="searchList"></ul>
@@ -41,10 +41,29 @@
         methods:{
             search:function(){
                 var txt=$('#keyWord').val();
+                if(!txt){
+                    alert('请输入搜索内容!!!');
+                    return
+                }
                 //console.log(txt);
                 axios.post("/search",{"txt":txt}).then(res=>{
                     this.searchList=res.data;
                     console.log(this.searchList);
+                    $("#macList li").remove();
+                    var html="";
+                    for(var i=0;i<this.searchList.length;i++){
+                        html+=`<li title="${this.searchList[i].macType}" id="${this.searchList[i].brand_id}">
+                        <a href="/recovery/${this.searchList[i].id}">
+                            <div class="pro-img"><img src="/Uploads/${this.searchList[i].macPhoto}"></div>
+                            <h2 class="pro-name">${this.searchList[i].macType}</h2>
+                            <p class="pro-num">目前已收${this.searchList[i].recoveryNum}台</p>
+                        </a>
+                    </li>`;
+                    };
+                    $(html).appendTo($('#macList'));
+
+
+
                 })
             },
         }

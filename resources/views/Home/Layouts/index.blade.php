@@ -16,6 +16,7 @@
 		<meta name="description" content="易机网是中国专业的数码产品手机回收网。直面用户回收，30秒评估手机交易价格，快速了解二手手机回收价格并网上回购交易，是专业的二手手机交易平台，二手苹果,二手三星手机等主流机型,马上换钱,变废为宝,同时易机网提供二手良品和以旧换新服务,是用户实现闲置手机变现,手机回收的好选择。 " />
 		<meta name="keywords" content="易机网,手机回收网,回收旧手机,二手手机回收,旧手机回收网,废旧手机回收网,苹果平板回收, 三星手机系列回收,苹果系列手机回收" />
 		<meta property="qc:admins" content="34640475211216375" />
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<script type="text/javascript">
 			var basePath = '';
 			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE6.0") {
@@ -39,8 +40,6 @@
 	<body>
 		<!-- 顶部 -->
 		<div id="app">
-			
-		
 			<div class="header">
 				
 				<!--顶部导航替换内容-->
@@ -101,21 +100,6 @@
 					</a>
 				</div>
 			</div>
-			<script type="text/javascript" src="{{ asset('hom/js/video.js') }}" ></script>
-			<script type="text/javascript">
-				var myPlayer = videojs('my-video');
-				jQuery(function() {
-					$(".vjs-mouse-display").on("click", function() {
-						var whereYouAt = myPlayer.currentTime();
-						var value = $(this).attr("data-current-time");
-						var valueArray = value.split(":");
-						var minue = valueArray[0];
-						var des = valueArray[1];
-						myPlayer.currentTime(120);
-	
-					});
-				});
-			</script>
 			<!--右侧导航-->
 			<div class="nav-right-bar">
 				<a href="javascript:;" class="info-kf"><img src="hom/images/r-bar1.png" alt=""></a>
@@ -222,8 +206,24 @@
 				</div>
 			</div>
 		</div>
-		
-		<script>
+		<!-- Scripts -->
+		<script src="{{ asset('js/app.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('hom/js/video.js') }}" ></script>
+		<script type="text/javascript">
+
+            var myPlayer = videojs('my-video');
+            jQuery(function() {
+                $(".vjs-mouse-display").on("click", function() {
+                    var whereYouAt = myPlayer.currentTime();
+                    var value = $(this).attr("data-current-time");
+                    var valueArray = value.split(":");
+                    var minue = valueArray[0];
+                    var des = valueArray[1];
+                    myPlayer.currentTime(120);
+
+                });
+            });
+
 			//联系客服
 			$('.cart_nav a').mouseenter(function() {
 				$(this).addClass('on');
@@ -248,6 +248,7 @@
 				}, 1000);
 			});
 		</script>
+
 	</body>
 
 </html>

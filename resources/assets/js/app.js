@@ -17,9 +17,11 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-Vue.component('left-nav', require('./components/leftNav.vue'));
+Vue.component('right', require('./components/Right.vue'));
+
 
 
 const app = new Vue({
     el: '#app'
 });
+

@@ -17,8 +17,20 @@
 Route::prefix('/')->namespace('Home')->group(function (){
 
     Route::get('/','IndexController@index');
-    //机型切换
-    Route::post('/{id}','IndexController@switch');
+    //挂载前首页数据加载
+    Route::get('/right','IndexController@right');
+    //ajax替换数据内容
+    Route::get('/switch/{id}','IndexController@switch');
+    //品牌点击更多
+    Route::post('/brmore','IndexController@brmore');
+    //机型点击更多
+    Route::get('/macmore/{id}','IndexController@macmore');
+
+
+
+
+
+
 
 	
 	Route::get('/recovery','RecoveryController@index');

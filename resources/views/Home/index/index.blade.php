@@ -6,7 +6,6 @@
 
 {{--顶部导航栏--}}
 @section('global_topbar')
-
 	<div class="global_topbar banner-recylce">
 		<div class="nav-column">
 			<div class="nav-left">
@@ -99,7 +98,7 @@
 			<p class="now-recycle">立刻回收</p>
 			<a href="#proQuility" class="tringle-infinite"><img src="hom/images/7.png" alt=""></a>
 		</div>
-		<script type="text/javascript">
+		{{--<script type="text/javascript">
 			jQuery(function() {
 				//获得焦点事件
 				$("#keyWord").bind("click", function(e) {
@@ -205,7 +204,7 @@
 				}
 				return true;
 			}
-		</script>
+		</script>--}}
 
 	</div>
 @endsection
@@ -249,63 +248,8 @@
 					<a href="javascript:;" id="cgPhone" class="active"><i class="phone"></i>手机</a>
 					<a href="javascript:;" id="cgPinBan"><i class="computer"></i>平板</a>
 				</div>
-				<div class="right">
-					<div class="nav-pro" id="">
-						<div class="phone small-level" id="shoujiBrandDiv">
-							<ul>
-								@foreach($brand as $bo)
-								{{--<li class="active" title="{{$bo['brandName']}}">--}}
-								<li title="{{$bo['brandName']}}">
-									<a href="##" id="{{$bo['id']}}" class="switch_mine">
-										<i class="line"></i>
-										<input type="hidden" value="{{$bo['id']}}">
-										<input type="hidden" value="{{$bo['brandName']}}">
-										<img src="/Uploads/{{$bo['brandPhoto']}}" class="hover-black">
-									</a>
-								</li>
-								@endforeach
-								<li><a href="javascript:;" class="show-more"><span>展开更多</span><i></i></a></li>
-							</ul>
-						</div>
-						<div class="computer small-level hide" id="pinbanBrandDiv">
-							<ul>
-								<li title="苹果">
-									<a href="javascript:;">
-										<i class="line"></i>
-										<input type="hidden" value="1">
-										<input type="hidden" value="苹果">
-										<img src="hom/images/a919cac6-3f3f-4433-9c25-4f1d097fdb89.png" class="hover-black">
-									</a>
-								</li>
-								
-							</ul>
-						</div>
-					</div>
-					<div class="pro-list">
-						<h2 class="name">
-	                        <span id="keyWordSpan"></span>
-	                        <span id="brandName">苹果</span>
-	                    	<span id="categoryName">(手机)</span>
-	                    	相关回收机型
-	                    </h2>
-						<ul id="productUl">
-							
-							@foreach($macytpe as $mo)
-							<li title="{{$mo['macType']}}">
-								<a href="##">
-									<div class="pro-img"><img src="/Uploads/{{$mo['macPhoto']}}"></div>
-									<h2 class="pro-name">{{$mo['macType']}}</h2>
-									<p class="pro-num">目前已收{{$mo['recoveryNum']}}台</p>
-								</a>
-							</li>
-							@endforeach
-							
-						</ul>
-						<span class="hide" id="isMore">
-	                    	   <a href="javascript:;" class="ck-more" id="moreBtn">查看更多</a>
-	                        </span>
-					</div>
-				</div>
+				{{--首页品牌和机型选择--}}
+				<right></right>
 			</div>
 		</div>
 	</div>
@@ -361,8 +305,7 @@
 		             </ul>
 	    </div>
 	</div>  -->
-
-		<script>
+		{{--<script>
 			var hasSub = false;
 			var basePath = "";
 			$(function() {
@@ -645,5 +588,5 @@
 				return true;
 			}
 
-		</script>
+		</script>--}}
 @endsection

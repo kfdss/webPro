@@ -4,7 +4,7 @@
             <div class="nav-pro" id="#">
                 <div class="phone small-level" id="shoujiBrandDiv">
                     <ul>
-                        <li v-for="item in brand" :title="item.brandName" >
+                        <li v-for="item in brand" :title="item.brandName" @click="ac(item)">
                             <a href="##" :id="item.id" class="switch_mine" @click="br(item)">
                                 <i class="line"></i>
                                 <input type="hidden" :value="item.id">
@@ -28,8 +28,8 @@
                 </h2>
                 <ul id="macList">
 
-                    <li v-for="item in mactype" :title="item.macType" :id="item.brand_id" >
-                        <a href="##">
+                    <li v-for="item in mactype" :title="item.macType" :id="item.brand_id">
+                        <a :href="/recovery/+item.id">
                             <div class="pro-img"><img :src="/Uploads/+item.macPhoto"></div>
                             <h2 class="pro-name">{{item.macType}}</h2>
                             <p class="pro-num">目前已收{{item.recoveryNum}}台</p>
@@ -51,9 +51,10 @@
         data(){
             return {
                 brandi:"苹果",
+                //保存机型数组
                 mactype:[],
+                //保存品牌数组
                 brand:[],
-                //ajax返回的机型信息
             }
         },
         created(){
@@ -69,11 +70,10 @@
         methods:{
             br:function(item){
                 var id=item.id;
-
                 axios.get("/switch/"+id).then(res=>{
                     this.brandi=res.data[0];
                     this.mactype=res.data[1];
-                    console.log(res.data);
+                    //console.log(res.data);
                 })
                 $('#isMore').show();
             },
@@ -94,7 +94,11 @@
                     this.mactype=res.data;
                 })
                 $('#isMore').hide();
-            }
+            },
+            ac:function(item){
+                console.log(item.brandName,item.id);
+            },
+
         }
     }
 </script>

@@ -68,33 +68,8 @@
 				<span><img src="hom/images/5.png" alt="">极速打款</span>
 				<span class="keep-safe"><img src="hom/images/6.png" alt="">价保无忧</span>
 			</div>
-			<form action="http://www.58yiji.com/index.html" id="sercheForm" method="post">
-				<div class="search-all">
-					<input type="text" name="keyWord" id="keyWord" autocomplete="off" placeholder="请输入想要回收手机/平板机型" value="">
-					<a href="javascript:;" class="search"><i class="search-icon" id="searchBnt">搜索</i></a>
-				</div>
-				<div class="search-recycle-end hide" id="searchSelect1">
-					<ul id="searchList"></ul>
-				</div>
-				<div class="search-select hide" id="searchSelect2">
-					<h2 class="name">热门推荐</h2>
-					<div class="hot-tj">
-						<a href="javascript:;">普通环保机型</a>
-						<a href="javascript:;">触屏环保机型</a>
-						<a href="javascript:;">苹果 iPhone 6</a>
-						<a href="javascript:;">苹果 iPhone 5S</a>
-						<a href="javascript:;">苹果iPhone 6s</a>
-						<a href="javascript:;">苹果 iPhone 6 Plus</a>
-						<a href="javascript:;">苹果iPhone 6S Plus</a>
-						<a href="javascript:;">苹果 iPhone 4s</a>
-					</div>
-					<h2 class="name">搜索历史</h2>
-					<div class="history-search">
-
-						暂无
-					</div>
-				</div>
-			</form>
+			{{--搜索手机类型--}}
+			<search></search>
 			<p class="now-recycle">立刻回收</p>
 			<a href="#proQuility" class="tringle-infinite"><img src="hom/images/7.png" alt=""></a>
 		</div>

@@ -18,10 +18,13 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 Vue.component('right', require('./components/Right.vue'));
+Vue.component('search', require('./components/Search.vue'));
+Vue.component('transmit', require('./components/Transmit.vue'));
 
 
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
 });
 

@@ -25,6 +25,8 @@ Route::prefix('/')->namespace('Home')->group(function (){
     Route::post('/brmore','IndexController@brmore');
     //机型点击更多
     Route::get('/macmore/{id}','IndexController@macmore');
+    //首页搜索
+    Route::post('/search','IndexController@search');
 
 
 
@@ -33,7 +35,7 @@ Route::prefix('/')->namespace('Home')->group(function (){
 
 
 	
-	Route::get('/recovery','RecoveryController@index');
+	Route::get('/recovery/{id}','RecoveryController@index');
 
 	Route::post('/recovery/submit','RecoveryController@submit');
 	//新闻资讯列表页

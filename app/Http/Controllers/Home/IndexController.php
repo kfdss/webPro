@@ -46,6 +46,12 @@ class IndexController extends Controller
         $res=Machine_type::where('brand_id','=',$id)->get();
         return $res;
     }
+    //首页搜索
+    public function search(Request $request){
+        $txt = $request->txt;
+        $res = Machine_type::where('macType','like','%'.$txt.'%')->get();
+        return $res;
+    }
 
 
 

@@ -27,24 +27,24 @@ Route::prefix('/')->namespace('Home')->group(function (){
     Route::get('/macmore/{id}','IndexController@macmore');
     //首页搜索
     Route::post('/search','IndexController@search');
-<<<<<<< HEAD
+
 //==============================信息页============================
-=======
+
 
 	//步骤1.开始估计  
->>>>>>> 1349137ad698a55e065aa18a1a89ce271c2860d0
+
 	Route::get('/recovery/{id}','RecoveryController@index');
 	//1.提交估计结果到步骤2
 	Route::post('/recovery/submit','RecoveryController@submit');
-<<<<<<< HEAD
+
 //==============================新闻页============================
-=======
+
 	
 	//步骤2. 获得估价
 	Route::post('/recovery/evaluation','RecoveryController@evaluation');
 	
 	
->>>>>>> 1349137ad698a55e065aa18a1a89ce271c2860d0
+
 	//新闻资讯列表页
 	Route::get('/news','NewsController@index');
     //新闻资讯列表挂载前

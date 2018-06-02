@@ -28,16 +28,15 @@ Route::prefix('/')->namespace('Home')->group(function (){
     //首页搜索
     Route::post('/search','IndexController@search');
 
-
-
-
-
-
-
-	
+	//步骤1.开始估计  
 	Route::get('/recovery/{id}','RecoveryController@index');
-
+	//1.提交估计结果到步骤2
 	Route::post('/recovery/submit','RecoveryController@submit');
+	
+	//步骤2. 获得估价
+	Route::post('/recovery/evaluation','RecoveryController@evaluation');
+	
+	
 	//新闻资讯列表页
 	Route::get('/news','NewsController@index');
 	//新闻资讯详情页

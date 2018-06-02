@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta name="baidu-site-verification" content="l0wo5at91x" />
 		<meta name="360-site-verification" content="f2ca490ee320d6e2d0f43957887a8688" />
@@ -12,11 +11,12 @@
 		<meta http-equiv="Pragma" content="no-cache">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="chrome=1; IE=edge" />
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<meta name="renderer" content="webkit">
 		<meta name="description" content="易机网是中国专业的数码产品手机回收网。直面用户回收，30秒评估手机交易价格，快速了解二手手机回收价格并网上回购交易，是专业的二手手机交易平台，二手苹果,二手三星手机等主流机型,马上换钱,变废为宝,同时易机网提供二手良品和以旧换新服务,是用户实现闲置手机变现,手机回收的好选择。 " />
 		<meta name="keywords" content="易机网,手机回收网,回收旧手机,二手手机回收,旧手机回收网,废旧手机回收网,苹果平板回收, 三星手机系列回收,苹果系列手机回收" />
 		<meta property="qc:admins" content="34640475211216375" />
-		<meta name="csrf-token" content="{{ csrf_token() }}">
+
 		<script type="text/javascript">
 			var basePath = '';
 			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE6.0") {
@@ -35,16 +35,72 @@
 		<link rel="stylesheet" href="{{ asset('hom/css/index.css') }}" >
 		<link rel="stylesheet" href="{{ asset('hom/css/video-js.css') }}">
 		<link rel="stylesheet" href="{{ asset('hom/css/news.css') }}">
+		<link rel="stylesheet" href="{{ asset('hom/css/base-all.css') }}">
+		<link rel="stylesheet" href="{{ asset('hom/css/old-recycle-step.css') }}">
 	</head>
+	
 
 	<body>
 		<!-- 顶部 -->
 		<div id="app">
+			
+		
 			<div class="header">
 				
 				<!--顶部导航替换内容-->
 				@section('global_topbar')
-					
+
+					<div class="global_topbar ">
+						<div class="nav-column">
+							<div class="nav-left">
+								<a href="/" class="logo"><img src="/hom/images/logo.png"></a>
+								<div class="globar_topbar_links">
+									<a href="/" ><span>旧机回收</span>@section('lins')<i class='line'>下划线</i>@show</a>
+									<a href="/news" rel="nofollow" target="_self"><span>资讯中心</span>@section('lin')<i class='line'>下划线</i>@show</a>
+								</div>
+							</div>
+							<div class="nav-right">
+								<ul>
+									<li class="cooperation">
+										<a href="javascript:;" class="nav-r-link">企业合作/服务</a><i class="tringle"></i><i class="line-bar">线</i>
+										<div class="nav-select">
+											<i class="select-tringle"></i>
+											<a href="purchaseCustomer.html" target="_blank" >批量回收/采购</a>
+											<!--<a href="http://open.58yiji.com/login" target="_blank" class="last-child">易机网开放平台</a>-->
+										</div>
+									</li>
+									<li class="search-r">
+										<a href="index.html" ><i class="search-navbr">搜索</i></a><i class="line-bar">线</i>
+										<!-- 
+										<div class="nav-select nav-select-sh">
+											<i class="select-tringle"></i>
+											<div class="search-inner">
+												<input type="text" class="search-text" placeholder="请输入想要购买的二手良品机型">
+												<a href="javascript:;" class="search">搜索</a>
+											</div>
+										</div>
+										-->
+									</li>
+									<li class="phone-s">
+										<i class="phone-ewm">手机扫二维码</i><i class="tringle"></i><i class="line-bar">线</i>
+										<div class="nav-select">
+											<i class="select-tringle"></i>
+											<a href="javascript:;" class="last-child erweima"><img src="/hom/images/code_03.jpg" alt="" width="130" height="130"><p>易机网移动端</p></a>
+										</div>
+									</li>
+									<li class="user-login">
+										<!--未登录-->
+										
+											<a href="##" class="nav-r-link login"><span class="state">未登录</span></a>
+										
+										<!--已登录-->
+										
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
 				@show
 			</div>
 			
@@ -83,33 +139,34 @@
 						</li>
 						<li class="five">
 							<p class="name-ewm">关注公众号查订单</p>
-							<p class="ewm"><img src="hom/images/erweima.png" alt="" height="90" width="90"></p>
+							<p class="ewm"><img src="/hom/images/erweima.png" alt="" height="90" width="90"></p>
 						</li>
 						<!-- 
 	            <li class="five">
 	                <p class="name-ewm">关注公众号查订单</p>
-	                <p class="ewm"><img src="hom/images//resources/v2/images/erweima.png" alt="" height="90" width="90"></p>
+	                <p class="ewm"><img src="/hom/images//resources/v2/images/erweima.png" alt="" height="90" width="90"></p>
 	            </li>
 	             -->
 					</ul>
 				</div>
 				<p class="copyright">© Copyright 2017 All Rights Reserved 深圳威锋互动网络有限公司 版权所有 粤ICP备18022101号-1</p>
 				<div style="width:300px;margin:0 auto; padding:20px 0;">
-					<a target="_blank" href="##" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="hom/images/record.png" style="float:left;" />
+					<a target="_blank" href="##" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/hom/images/record.png" style="float:left;" />
 						<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44030502001885号</p>
 					</a>
 				</div>
 			</div>
+
 			<!--右侧导航-->
 			<div class="nav-right-bar">
-				<a href="javascript:;" class="info-kf"><img src="hom/images/r-bar1.png" alt=""></a>
-				<a href="javascript:;" class="attention-us"><img src="hom/images/r-bar2.png" alt="">
+				<a href="javascript:;" class="info-kf"><img src="/hom/images/r-bar1.png" alt=""></a>
+				<a href="javascript:;" class="attention-us"><img src="/hom/images/r-bar2.png" alt="">
 					<div class="erweima">
 						<p>扫码关注</p>
-						<img src="hom/images/erweima.png" alt="" width="100" height="100">
+						<img src="/hom/images/erweima.png" alt="" width="100" height="100">
 					</div>
 				</a>
-				<a href="javascript:;" class="go-top"><img src="hom/images/r-bar3.png" alt=""></a>
+				<a href="javascript:;" class="go-top"><img src="/hom/images/r-bar3.png" alt=""></a>
 			</div>
 			<!--资讯客服弹出框-->
 			<div class="info-service hide">
@@ -125,7 +182,7 @@
 						<div class="cart_Box">
 							<div class="cart_box" style="display: block;">
 								<div class="cartdiv">
-									<p><img class="no_lazy" src="hom/images/Qcart.jpg" alt="在线客服"></p>
+									<p><img class="no_lazy" src="/hom/images/Qcart.jpg" alt="在线客服"></p>
 									<a target="_blank" href="##" >旧机回收</a>
 									<a target="_blank" href="##" >二手良品</a>
 								</div>
@@ -195,7 +252,7 @@
 						</div>
 						<div class="cart_bottom">
 							<dl>
-								<dt><img class="no_lazy" src="hom/images/mezi.png" alt="联系客服"></dt>
+								<dt><img class="no_lazy" src="/hom/images/mezi.png" alt="联系客服"></dt>
 								<dd>
 									<h2 style="line-height: 25px;font-size: 18px;color: #333333;text-align: center">400-848-9711</h2>
 									<p style="line-height: 20px;font-size: 12px;color: #333333;text-align: center">咨询时间9:00-19:00</p>
@@ -206,24 +263,23 @@
 				</div>
 			</div>
 		</div>
-		<!-- Scripts -->
 		<script src="{{ asset('js/app.js') }}"></script>
 		<script type="text/javascript" src="{{ asset('hom/js/video.js') }}" ></script>
 		<script type="text/javascript">
+			var myPlayer = videojs('my-video');
+			jQuery(function() {
+				$(".vjs-mouse-display").on("click", function() {
+					var whereYouAt = myPlayer.currentTime();
+					var value = $(this).attr("data-current-time");
+					var valueArray = value.split(":");
+					var minue = valueArray[0];
+					var des = valueArray[1];
+					myPlayer.currentTime(120);
 
-            var myPlayer = videojs('my-video');
-            jQuery(function() {
-                $(".vjs-mouse-display").on("click", function() {
-                    var whereYouAt = myPlayer.currentTime();
-                    var value = $(this).attr("data-current-time");
-                    var valueArray = value.split(":");
-                    var minue = valueArray[0];
-                    var des = valueArray[1];
-                    myPlayer.currentTime(120);
-
-                });
-            });
-
+				});
+			});
+		</script>
+		<script type="text/javascript">
 			//联系客服
 			$('.cart_nav a').mouseenter(function() {
 				$(this).addClass('on');
@@ -248,9 +304,14 @@
 				}, 1000);
 			});
 
+			var max = 20;
+			var min = 10;
+			var xValue = '3月,4月,5月';
+			var yValue = '17,16,14';
 
 		</script>
-
+		<script type="text/javascript" src="{{ asset('hom/js/echarts.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('hom/js/eval_select.js') }}"></script>
 	</body>
 
 </html>

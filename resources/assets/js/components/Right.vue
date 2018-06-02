@@ -65,11 +65,7 @@
                 this.mactype=res.data[1];
             })
 
-            },
-            updated(){
-                //console.log(11);
-
-            },
+        },
 
         methods:{
             br:function(item){

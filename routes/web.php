@@ -15,7 +15,7 @@
 
 //前台路由组
 Route::prefix('/')->namespace('Home')->group(function (){
-
+//==============================首页============================
     Route::get('/','IndexController@index');
     //挂载前首页数据加载
     Route::get('/right','IndexController@right');
@@ -27,21 +27,20 @@ Route::prefix('/')->namespace('Home')->group(function (){
     Route::get('/macmore/{id}','IndexController@macmore');
     //首页搜索
     Route::post('/search','IndexController@search');
-
-
-
-
-
-
-
-	
+//==============================信息页============================
 	Route::get('/recovery/{id}','RecoveryController@index');
 
 	Route::post('/recovery/submit','RecoveryController@submit');
+//==============================新闻页============================
 	//新闻资讯列表页
 	Route::get('/news','NewsController@index');
+    //新闻资讯列表挂载前
+    Route::get('/news/loade','NewsController@loade');
+    //点击新闻分类切换
+    Route::get('/news/type/{id}','NewsController@type');
 	//新闻资讯详情页
-	Route::get('/news/details/{id}','NewsController@details');
+	Route::get('/news/{id}','NewsController@details');
+
 
 
 	

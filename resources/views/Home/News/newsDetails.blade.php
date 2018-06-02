@@ -76,75 +76,70 @@
 		<div class="w1100 center">
 			<div class="centerleft">
 				<h3><span>新闻动态</span></h3>
+                <h3>
+                    <a href="/news" target="_self" class="q_01 on">回收资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+                </h3>
 				<h3>
-                <a href="/news" target="_self" class="q_01 on">回收资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-        	</h3>
+                    <a href="/news" target="_self" class="q_08">手机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+                </h3>
 				<h3>
-                <a href="index-1.htm" target="_self" class="q_08">手机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-        	</h3>
-				<h3>
-                <a href="index-2.htm" target="_self" class="q_07">易机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-        	</h3>
+                    <a href="/news" target="_self" class="q_07">易机资讯<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+                </h3>
 				<h3><span>帮助中心</span></h3>
 				<h3>
-		        <a href="1-1.html" rel="nofollow" target="_self" class="q_03 ">
-		        	常见问题
-		        	<img src="{{ asset('hom/images/z_02.png') }}" />
-		        </a>
-    		</h3>
+                    <a href="1-1.html" rel="nofollow" target="_self" class="q_03 ">
+                        常见问题
+                        <img src="{{ asset('hom/images/z_02.png') }}" />
+                    </a>
+    		    </h3>
 				<h3>
-		        <a href="2-1.html" rel="nofollow" target="_self" class="q_05 ">
-		        	服务条款
-		        	<img src="{{ asset('hom/images/z_02.png') }}" />
-		        </a>
-	        </h3>
+                    <a href="2-1.html" rel="nofollow" target="_self" class="q_05 ">
+                        服务条款
+                        <img src="{{ asset('hom/images/z_02.png') }}" />
+                    </a>
+                </h3>
 				<h3>
-	        	<a href="3-1.html" target="_self" class="q_01 ">易机课堂<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
-				<!--<h3>
-		        <a href="/helpCenter/4.html" rel="nofollow" target="_self" class="q_06 ">
-		        	担保交易
-		        	<img src="/resources/v2/images/z_02.png"/>
-		        </a>
-	        </h3>-->
+                    <a href="3-1.html" target="_self" class="q_01 ">易机课堂<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+                </h3>
 				<h3><span>关于我们</span></h3>
+                    <h3>
+                    <a href="about_yjw.html" rel="nofollow" class="q_02 " target="_self">关于易机网<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+                </h3>
 				<h3>
-		        <a href="about_yjw.html" rel="nofollow" class="q_02 " target="_self">关于易机网<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
+                    <a href="12.html" rel="nofollow" class="q_04 " target="_self">联系我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+                </h3>
 				<h3>
-	        	<a href="12.html" rel="nofollow" class="q_04 " target="_self">联系我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
-				<h3>
-	        	<a href="13.html" rel="nofollow" class="q_07 " target="_self">加入我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
-	        </h3>
+                    <a href="13.html" rel="nofollow" class="q_07 " target="_self">加入我们<img src="{{ asset('hom/images/z_02.png') }}" /></a>
+                </h3>
 			</div>
-			<div class="centeright pt20">
-				<div class="news">
-		        	<div class="newstitle">
-					<h1>{{$details['title']}}</h1>
-					<p>
-						<span>浏览次数：{{$details['click_num']}}</span>
-						<span>发布日期：{{$details['created_at']}}</span>
-						<span>所属分类：<span style="cursor: pointer;" onclick="javascript:history.go(-1)"> {{$type['name']}}</span> </span>
-					</p>
-				</div>
-				<div class="newscenter">
-					{!! $details['content'] !!}
-				</div>
-			</div>
-			<div class="newspage">
-				<a  class="tonewsdetail" href="/news/details/{{$prev['id']}}" tppabs="http://www.58yiji.com/news36/3624.html" target="_self" data-default = "/news36/3624.html" data-currNo="-1"   class="prevdate">
-					<span>上一篇：</span>{{$prev['title']}}
-				</a>
-				<a class="tonewsdetail" href="/news/details/{{$next['id']}}" tppabs="http://www.58yiji.com/news36/3617.html" target="_self" data-default = "/news36/3617.html" data-currNo="1"    class="prevdate">
-					<span>下一篇：</span>{{$next['title']}}
-				</a>
-			</div>
-		</div>
+            <div class="centeright pt20">
+                <div class="news">
+                    <div class="newstitle">
+                        <h1>{{$detail['title']}}</h1>
+                        <p>
+                            <span>浏览次数：{{$detail['click_num']}}</span>
+                            <span>发布日期：{{$detail['created_at']}}</span>
+                            <span>所属分类：<span style="cursor: pointer;" onclick="javascript:history.go(-1)"> {{$type['name']}}</span> </span>
+                        </p>
+                    </div>
+                    <div class="newscenter">
+                        {!! $detail['content'] !!}
+                    </div>
+                </div>
+                <div class="newspage">
+                    <a  class="tonewsdetail" href="/news/{{$prev['id']}}" tppabs="http://www.58yiji.com/news36/3624.html" target="_self" data-default = "/news36/3624.html" data-currNo="-1"   class="prevdate">
+                        <span>上一篇：</span>{{$prev['title']}}
+                    </a>
+                    <a class="tonewsdetail" href="/news/{{$next['id']}}" tppabs="http://www.58yiji.com/news36/3617.html" target="_self" data-default = "/news36/3617.html" data-currNo="1"    class="prevdate">
+                        <span>下一篇：</span>{{$next['title']}}
+                    </a>
+                </div>
+            </div>
+        </div>
 	</div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
 
 
 

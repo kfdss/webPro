@@ -20,6 +20,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 Vue.component('right', require('./components/Right.vue'));
 Vue.component('search', require('./components/Search.vue'));
 Vue.component('transmit', require('./components/Transmit.vue'));
+Vue.component('news', require('./components/News.vue'));
 
 
 
